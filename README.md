@@ -29,14 +29,10 @@ This is a **small scale Data Mart** which is essentially a part of Analytical Da
 6. Payment_Settled
 
 ### This repository consists of 4 files:
-1. CREATE.sql:
-   Has the SQL code to create all the dimensions, FACT and Staging Table.
-3. ETL.sql:
-   Has the SQL code for Extract, Transform and Load of data from the two datasets into Staging, using which Dimensions and FACT Table are populated.
-5. Business Questions.sql:
-   Two Business Questions from the designed Analytical Database.
-7. Business Question Report.png:
-   A report of the Business Questions (created in **Tableau**). For simplicity and ease of readability, a .png exported file of the report is uploaded.
+**1. CREATE.sql:** Has the SQL code to create all the dimensions, FACT and Staging Table.
+**2. ETL.sql:** Has the SQL code for Extract, Transform and Load of data from the two datasets into Staging, using which Dimensions and FACT Table are populated.
+**3. Business Questions.sql:** Two Business Questions from the designed Analytical Database.
+**4. Business Question Report.png (exported from Tableau):** A report of the Business Questions. For simplicity and ease of readability, a .png exported file of the report is uploaded.
 
 A Data Mart consists of a FACT Table and dimensions, which are connected to FACT Table.
 
