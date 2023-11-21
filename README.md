@@ -2,9 +2,9 @@
 
 This is a **small scale Data Mart** which is essentially a part of Analytical Database, also known as OLAP (Online Analytical Processing) schema database. A Data Mart is a subset of a data warehouse focused on a particular line of business, department, or subject area. It is a smaller, more focused repository of data that is derived from the larger, centralized data warehouse.
 
-### This Data Mart is created using the following two databases:
+### This Data Mart is created using the following two datasets:
 
-**Real Estate Database:** (Link: [https://catalog.data.gov/dataset/real-estate-sales-2001-2018](url))
+**Real Estate Dataset:** (Link: [https://catalog.data.gov/dataset/real-estate-sales-2001-2018](url))
 1. Serial Number
 2. List Year
 3. Date Recorded
@@ -20,13 +20,19 @@ This is a **small scale Data Mart** which is essentially a part of Analytical Da
 13. OPM Remarks
 14. Location
 
-**Buyers Database:**
+**Buyers Dataset:**
 1. Buyer_ID
 2. First_Name
 3. Last_Name
 4. Contact
 5. Payment_Mode
 6. Payment_Settled
+
+### This repository consists of 4 files:
+1. CREATE.sql: Has the SQL code to create all the dimensions, FACT and Staging Table.
+2. ETL.sql: Has the SQL code for Extract, Transform and Load of data from the two datasets into Staging, using which Dimensions and FACT Table are populated.
+3. Business Questions.sql: Two Business Questions from the designed Analytical Database.
+4. Business Question Report.png: A report of the Business Questions (created in **Tableau**). For simplicity and ease of readability, a .png exported file of the report is uploaded.
 
 A Data Mart consists of a FACT Table and dimensions, which are connected to FACT Table.
 
